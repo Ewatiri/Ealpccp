@@ -1,0 +1,148 @@
+.new-scholar>div,.accesscode>div,.first-login>div{
+    padding: 4%;
+    border: 1px solid;
+    border-color: #e5e5e5;
+    width: 60%;
+    margin-top: 10%;
+    margin-left: 21%;
+}
+.new-scholar>div>p,.first-login>form{
+    text-align: center;
+}
+.signin-form{
+    height: 30%;
+    width:50%;
+    padding: 5%;
+    border: 1px solid;
+    border-color: #e5e5e5;
+    margin-top: 5%;
+    margin-left: 25%;
+}
+.signin-form>button,.signin-form>a,.invited-form>button,.staff-form>button,.w2f-form>button,.ealp-form>button{
+    margin-left: 38%;
+}
+.signin-form>p,.invited-form>p,.staff-form>p,.w2f-form>p,.ealp-form>p{
+    text-align: center;
+}
+.signup-form1,.first-login{
+
+    margin-left: 24%;
+    width: 50%;
+
+}
+.menu-wrapper{
+
+    margin-left: -24%;
+}
+.menu-wrapper, .app-content{
+    position: absolute;
+}
+.alert-box{
+    display: none;
+
+}
+
+.accesscode>div>form>p{
+    text-align: center;
+}
+.accesscode>div>form>button{
+    margin-left: 30%;
+}
+
+/*.scholarapp-content>div{
+    float: left;
+}*/
+.menu{
+    margin-top: 1%;
+    padding: 0%;
+}
+.app-content,.counselor1{
+    margin-left: 9%;
+    color:#686868;
+    font-family: Helvetica; 
+}
+.personal-app>form>button{
+    margin-left:45% ;
+}
+
+.myrow{
+    padding-bottom: 2% !important;
+}
+.myclose{
+    font-size: 300%;
+    margin-top: -2.5%;
+}
+.center-btn{
+    margin-left: 42%;
+}
+
+.stitched {
+    // padding: 20px;
+    //margin: 10px;
+    line-height: 1.3em;
+    border-bottom: 2px dashed #ccc;
+    //box-shadow: 0 0 0 4px #000, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+
+}
+.main-title{
+    font-weight: 400%;
+    font-weight: bolder;
+    text-align: center;
+}
+.announ-signature{
+    text-align: right;
+    font-style: italic;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.announ-controls{
+    margin-left: 82.5%;
+}
+.announ-title{
+    margin-left: 10%;
+    font-weight: bold;
+}
+.old-essay{
+    border: 1px #21abcd solid;
+    padding: 3%;
+    width: 50%;
+    margin-left: 8%;
+}
+
+.old-essay-full{
+    border: 1px #21abcd solid;
+    padding: 3%;
+   margin-left: 8%;
+}
+
+.essay{
+    border:1px #e5e5e5 dotted;
+    padding: 3%;
+}
+.essay-close{
+    font-size: 200%;
+    margin-top: -1.8%;
+}
+.center-num{
+    text-align: center;
+}
+.icon{
+    margin-right: 5px;
+}
+.scollege{
+    margin-left: 13%;
+}
+.inprogress{
+    background-color: #ffbf00;
+}
+.complete{
+    background-color: #2ecc71;
+}
+.prog1{
+    margin-left: 35%;
+}
+.prog1>.nprogress{
+    margin-left:-35% ;
+    margin-top: 10%;
+}

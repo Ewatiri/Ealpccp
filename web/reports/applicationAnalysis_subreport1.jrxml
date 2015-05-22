@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="applicationAnalysis_subreport1" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="ce651e51-8ead-4577-b9a6-a51c1a258704">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true" pdfFontName="Times-Bold"/>
+	<style name="SubTitle" forecolor="#21ABCD" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontSize="12" isBold="true"/>
+	<style name="Detail" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<field name="successful" class="java.lang.String"/>
+	<field name="rej" class="java.lang.String"/>
+	<field name="total" class="java.lang.String"/>
+	<field name="reg" class="java.lang.String"/>
+	<field name="mcf" class="java.lang.String"/>
+	<field name="regmcf" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="270" y="0" width="263" height="62" uuid="2457dbcb-6210-4790-aa90-1ecce3a2c1fa"/>
+				<textElement verticalAlignment="Middle">
+					<font pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[EALP CCP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="292" y="62" width="217" height="22" uuid="d7893ad2-a32b-4574-adcc-385e1236af86"/>
+				<textElement>
+					<font fontName="Times New Roman" pdfFontName="Times-Roman"/>
+				</textElement>
+				<text><![CDATA[Application Scores Analysis]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="1" y="25" width="802" height="1" uuid="ec2ff75d-cda2-4a57-9098-12364c4e6665"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="3" y="1" width="802" height="1" uuid="e734479a-5414-44cd-9d52-b40eb7214f0d"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="225" splitType="Stretch">
+			<rectangle>
+				<reportElement x="72" y="12" width="298" height="132" uuid="5ce1f1b0-6719-400f-90ed-949618d5ae94"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="135" y="18" width="165" height="20" uuid="798b4740-cba9-4dd1-9ab1-3a95ce4069e1"/>
+				<text><![CDATA[Applicants Analysis ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="52" width="114" height="20" uuid="a811a6f6-770e-4e79-a18a-faded7303382"/>
+				<text><![CDATA[Successful Applicants]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="81" width="132" height="20" uuid="5ae72c77-33db-45ef-8145-ad4924958997"/>
+				<text><![CDATA[Unsuccessful Applicants]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="84" y="109" width="152" height="20" uuid="6a8c131f-f17f-42f4-80e1-8f462f3d4c46"/>
+				<text><![CDATA[Total Number of Applicants]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="465" y="12" width="298" height="132" uuid="09a32838-3070-48e1-b19c-3b55cb47634b"/>
+			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="503" y="18" width="233" height="20" uuid="32f1756a-bf7b-4a8a-9d37-a9d5b4d253b2"/>
+				<text><![CDATA[Successful Applicants Analysis ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="478" y="47" width="100" height="20" uuid="c6745134-7dd2-4754-ac3a-6ef37a54e206"/>
+				<text><![CDATA[Regular + MCF]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="76" width="100" height="20" uuid="2b873697-a1bd-4c8f-916d-a73d6d15225e"/>
+				<text><![CDATA[Regular Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="479" y="106" width="100" height="20" uuid="46df6ddb-5483-415b-9150-59c896c0225f"/>
+				<text><![CDATA[MCF Only]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="236" y="52" width="100" height="20" uuid="86be6fc6-4cfa-47ef-81d9-6f1d664001b3"/>
+				<textFieldExpression><![CDATA[$F{successful}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="81" width="100" height="20" uuid="67c332b7-743b-47bd-8506-4f76220ab8fd"/>
+				<textFieldExpression><![CDATA[$F{rej}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="236" y="109" width="100" height="20" uuid="a30fed9c-5800-4ffe-9e03-9a77b3055b69"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="610" y="76" width="100" height="20" uuid="c68c58d5-1351-46c7-92b5-decfa8bba7ed"/>
+				<textFieldExpression><![CDATA[$F{reg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="610" y="109" width="100" height="20" uuid="65cbb72c-1db2-4b5b-ae33-cb8bad5c1af6"/>
+				<textFieldExpression><![CDATA[$F{mcf}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="610" y="47" width="100" height="20" uuid="39380e38-6748-41e1-b7cf-a2ec90585601"/>
+				<textFieldExpression><![CDATA[$F{regmcf}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="32" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="802" height="1" uuid="0d0d7d96-e534-4a8f-afad-9415a39d31e6"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="c6a4aa39-8185-4458-ab79-5908d1fc8f61"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="b8b131ed-0228-4328-af87-3b17b8d153e3"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="4f95d7cb-3777-461e-b3fa-ccf0b2de3437"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="839ca7d1-1d93-4881-b317-ac512ab5c123"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

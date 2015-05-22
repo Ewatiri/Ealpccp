@@ -1,0 +1,16 @@
+Equity African Leadership Programme College Counseling Portal (EALP CCP) DESCRIPTION
+
+Each year the EALP college counseling team receives applications from scholars hoping to get admission to top colleges/universities through the team's guidance. The applications are then reviewed and the scholars who score highly are accepted into the program and the college preparation starts.
+The EALP CCP was designed to help in this process.
+
+The system is divided into two modules: Module 1 (Application Module) and Module 2 (College Preparation Module) and the users are divided into three categories:
+a) Scholars
+b) College Counselors (Mentors)
+c) Head College Counselor 
+The scholars are in charge of creating their own accounts and the accounts can only be created in the first module of the system before application submission is closed.
+In the first module, their role is to complete and submit their applications. In the second module,they are expected to sign up for events, tests, upload test results and essays.
+The essays are then reviewed by counselors.
+The duties of the counselors in module one includes creating announcements,resources and reviewing the applications.
+In the second module they pick their mentees (scholars), upload their scores, create events and review essays.
+The head counselor is the overall head of the program and performs the same tasks as the mentors. On top of that he/she can also create counselor accounts and is incharge of switching the system between the modules. 
+
