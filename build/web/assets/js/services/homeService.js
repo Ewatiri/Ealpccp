@@ -1349,7 +1349,7 @@ ealpApp.service("scholarService", function ($http, $location, utility, initServi
     };
 })*/
 
-ealpApp.service("homeService", function ($http, $location, utility, initService) {
+ealpApp.service("homeService", function ($http, $location, utility) {
     var ann = {};
     this.login = function (user) {
         user.action = "login";

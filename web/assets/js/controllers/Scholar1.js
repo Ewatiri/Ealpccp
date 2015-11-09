@@ -37,7 +37,7 @@ ealpApp.controller("scholar1Ctrl", function ($scope, $rootScope, ealpService) {
 
 });
 
-ealpApp.controller("scholar2Ctrl", function ($scope, initService, $rootScope, ealpService) {
+ealpApp.controller("scholar2Ctrl", function ($scope, $rootScope, ealpService) {
     $rootScope.menus = [{menuItem: "Announcements", icon1: "fa fa-bullhorn", child: '0', view: "announ"},
         {menuItem: "Profile", icon1: "fa fa-paw", child: "0", view: "profile"},
         {menuItem: "Essays", icon1: "fa fa-file-word-o", child: "0", view: "essays"},

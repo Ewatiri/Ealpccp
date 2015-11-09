@@ -53,7 +53,7 @@ ealpApp.controller("counselor1Ctrl", function ($scope, $rootScope, ealpService) 
 
 });
 
-ealpApp.controller("counselor2Ctrl", function ($rootScope, $scope, initService, ealpService) {
+ealpApp.controller("counselor2Ctrl", function ($rootScope, $scope, ealpService) {
     $rootScope.menus = [
         {menuItem: "Announcements", icon1: "fa fa-bullhorn", icon2: "fa fa-chevron-down", view: "announ", child: "1", subShow: true, subMenu: [{menuItem: "View Announcements", child: "0", view: "announ"}, {menuItem: "Create Announcement", child: "0", view: "addannoun"}, {menuItem: "Manage Announcements", child: "0", view: "announ1"}]},
         {menuItem: "Scholars", icon1: "fa fa-users", icon2: "fa fa-chevron-down", view: "scholars", child: "1", subShow: false, subMenu: [{menuItem: "My Scholars", child: "0", view: "myscholars"}, {menuItem: "Scholar Pool", child: "0", view: "allscholars"}]},
