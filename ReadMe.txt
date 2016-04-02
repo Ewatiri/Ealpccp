@@ -1,6 +1,6 @@
 Name:	Eva Wanjugu Watiri
 Registration Number:	J17/0632/2011
-Supervisor:	Mr. Elizaphan Maina
+Supervisor:	Dr. Elizaphan Maina
 Academic Year:	2014/2015
 Project Title:	Equity African Leadership Programme College Counseling Portal (EALP CCP)
 
